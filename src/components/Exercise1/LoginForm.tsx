@@ -17,7 +17,11 @@ type FormValues = {
     password: string;
 };
 
-export default function LoginForm() {
+interface LoginFormProps {
+    handleLogin: () => void;
+}
+
+export default function LoginForm({ handleLogin }: LoginFormProps) {
     const methods = useForm<FormValues>({
         defaultValues: {
             email: "",
@@ -79,7 +83,7 @@ export default function LoginForm() {
                 />
 
                 <div className="flex justify-start">
-                    <Button type="submit" className="px-4" variant="default">
+                    <Button type="submit" className="px-4" variant="default" onClick={handleLogin}>
                         Next
                         <ChevronRight className="size-4" />
                     </Button>

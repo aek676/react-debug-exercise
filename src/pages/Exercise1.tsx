@@ -22,7 +22,7 @@ export default function Exercise1() {
         <div className="container mx-auto p-8 text-center">
             <Navbar handleLogout={handleLogout} />
             <div className={`${showLoginForm ? "" : "hidden"}`}>
-                <LoginForm />
+                <LoginForm handleLogin={handleLogin} />
             </div>
             <div className={`${showCheckmark ? "text-center mt-90" : "hidden"}`}>
                 <Star />
