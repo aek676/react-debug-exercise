@@ -7,7 +7,7 @@ const initialTodosList = [
         title: 'Book the ticket for today evening',
     },
     {
-        id: 2,
+        id: 1,
         title: 'Rent the movie for tomorrow movie night',
     },
     {
@@ -40,7 +40,7 @@ export default function SimpleTodos() {
     const [todosList, setTodosList] = useState(initialTodosList);
 
     const deleteTodo = (id: number) => {
-        const updatedTodos = todosList.filter(todo => todo.id !== id);
+        const updatedTodos = todosList.filter(todo => todo.id === id);
         setTodosList(updatedTodos);
     }
 
@@ -52,9 +52,9 @@ export default function SimpleTodos() {
                 </div>
 
                 <ul className="mt-6 space-y-3">
-                    {todosList.map(todo => (
-                        <TodosItem key={todo.id}
-                            todoDetails={todo}
+                    {todosList.map((todo, index) => (
+                        <TodosItem key={index}
+                            todo={todo}
                             deleteTodo={deleteTodo} />
                     ))}
                 </ul>

@@ -1,16 +1,15 @@
 interface TodosItemProps {
-    todoDetails: {
+    todo: {
         id: number;
         title: string;
     },
     deleteTodo: (id: number) => void
 }
-
-export default function TodosItem({ todoDetails, deleteTodo }: TodosItemProps) {
-    const { id, title } = todoDetails;
+export default function TodosItem({ todo, deleteTodo }: TodosItemProps) {
+    const { id, title } = todo;
 
     const onDeleteTodo = () => {
-        deleteTodo(id);
+        deleteTodo(id + 1);
     }
 
     return (
