@@ -1,93 +1,80 @@
 # React Debugging Exercises
 
-Este repositorio contiene una colección de **ejercicios prácticos para aprender a debuggear en React**. Cada ejercicio presenta desafíos comunes que los desarrolladores enfrentan en aplicaciones React del mundo real.
+This repository contains a collection of **practical exercises for learning to debug in React**. Each exercise presents common challenges that developers face in real-world React applications.
 
-## 🎯 Objetivo
+## 🎯 Objective
 
-El objetivo de estos ejercicios es desarrollar habilidades de debugging en React, aprendiendo a:
-- Identificar errores comunes en componentes React
-- Usar las herramientas de desarrollo del navegador
-- Entender el flujo de datos y estado en React
-- Depurar problemas de renderizado y eventos
+The goal of these exercises is to develop debugging skills in React, learning to:
+- Identify common errors in React components
+- Use browser developer tools
+- Understand data flow and state in React
+- Debug rendering and event issues
 
-## 📋 Ejercicios
+## 📋 Exercises
 
-### Ejercicio 1: Formulario de Login
-**Ruta:** `/exercise1`
+### Exercise 1: Login Form
+**Route:** `/exercise1`
 
-Un ejercicio de debugging de un formulario de login con validación. El estudiante debe identificar y corregir problemas relacionados con el manejo de eventos y la lógica de formularios.
+A debugging exercise for a login form with validation. Students must identify and fix issues related to event handling and form logic.
 
-**Componentes involucrados:**
-- `LoginForm.tsx` - Formulario principal con validación
-- `Navbar.tsx` - Barra de navegación
-- `Footer.tsx` - Pie de página
+**Components involved:**
+- `LoginForm.tsx` - Main form with validation
+- `Navbar.tsx` - Navigation bar
+- `Footer.tsx` - Footer
 
-### Ejercicio 2: Lista de Tareas (Todos)
-**Ruta:** `/exercise2`
+### Exercise 2: Todo List
+**Route:** `/exercise2`
 
-Un ejercicio para debuggear una aplicación de lista de tareas. Contiene errores en la lógica de eliminación de elementos y manejo del estado.
+An exercise to debug a todo list application. Contains errors in item deletion logic and state management.
 
-**Componentes involucrados:**
-- `SimpleTodos.tsx` - Componente principal de la lista
-- `TodosItem.tsx` - Componente individual de cada tarea
+**Components involved:**
+- `SimpleTodos.tsx` - Main list component
+- `TodosItem.tsx` - Individual task component
 
-### Ejercicio 3: Buscador de Películas (React 19 Migration)
-**Ruta:** `/exercise3`
+### Exercise 3: Movie Search (React 19 Migration)
+**Route:** `/exercise3`
 
-⚠️ **Este ejercicio es especial:** Consiste en **actualizar la aplicación a la nueva versión de React 19 y debuggear para poder hacerla funcional de nuevo**.
+⚠️ **This exercise is special:** It consists of **updating the application to the new React 19 version and debugging to make it functional again**.
 
-La aplicación es un buscador de películas que utiliza la API de TMDb (The Movie Database). Originalmente fue escrita usando patrones antiguos de React (componentes de clase, jQuery, Bloodhound/Typeahead) que pueden no ser compatibles con React 19.
+The application is a movie search engine that uses the TMDb (The Movie Database) API. It was originally written using old React patterns (class components, jQuery, Bloodhound/Typeahead) that may not be compatible with React 19.
 
-**Desafíos del ejercicio:**
-- Migrar componentes de clase a componentes funcionales con hooks
-- Reemplazar dependencias obsoletas (jQuery, Bloodhound)
-- Adaptar el código a los nuevos patrones de React 19
-- Identificar y corregir errores de compatibilidad
+**Exercise challenges:**
+- Migrate class components to functional components with hooks
+- Replace obsolete dependencies (jQuery, Bloodhound)
+- Adapt code to new React 19 patterns
+- Identify and fix compatibility errors
 
-**Componentes involucrados:**
-- `Exercise3.jsx` - Componente principal de clase
-- `card.jsx` - Tarjeta de información de película
-- `search.jsx` - Caja de búsqueda con typeahead
+**Components involved:**
+- `Exercise3.jsx` - Main class component
+- `card.jsx` - Movie information card
+- `search.jsx` - Search box with typeahead
 
-## 🚀 Instalación
+## 🚀 Installation
 
-Para instalar las dependencias:
+To install dependencies:
 
 ```bash
 bun install
 ```
 
-## 💻 Desarrollo
+## 💻 Development
 
-Para iniciar el servidor de desarrollo:
+To start the development server:
 
 ```bash
 bun dev
 ```
 
-## 🏭 Producción
+## 🛠️ Technologies
 
-Para ejecutar en modo producción:
+- **React 19** - UI Library
+- **TypeScript** - Static typing
+- **Tailwind CSS** - Styling framework
+- **Shadcn/UI** - UI Components
+- **React Router** - Routing
 
-```bash
-bun start
-```
-
-## 🛠️ Tecnologías
-
-- **Bun** - Runtime de JavaScript
-- **React 19** - Biblioteca de UI
-- **TypeScript** - Tipado estático
-- **Tailwind CSS** - Framework de estilos
-- **Shadcn/UI** - Componentes de UI
-- **React Router** - Enrutamiento
-
-## 📚 Recursos de Debugging
+## 📚 Debugging Resources
 
 - [React DevTools](https://react.dev/learn/react-developer-tools)
-- [Debugging en el navegador](https://developer.chrome.com/docs/devtools/)
-- [Documentación de React 19](https://react.dev/)
-
----
-
-Este proyecto fue creado usando `bun init` con [Bun](https://bun.com), un runtime de JavaScript rápido y todo-en-uno.
+- [Browser Debugging](https://developer.chrome.com/docs/devtools/)
+- [React 19 Documentation](https://react.dev/)
