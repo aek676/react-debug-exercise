@@ -24,7 +24,7 @@ async function fetchApiData(url: string): Promise<Movie> {
     const res = await fetch(url);
     const data = await res.json();
     return {
-        id: data.id, // Usamos id estándar
+        id: data.id,
         movieID: data.id,
         original_title: data.original_title,
         tagline: data.tagline,
