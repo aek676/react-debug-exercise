@@ -31,6 +31,7 @@ export default function LoginForm({ handleLogin }: LoginFormProps) {
 
     const onSubmit = (data: FormValues) => {
         console.log("Form submitted", data);
+        handleLogin();
     };
 
     return (
@@ -83,7 +84,7 @@ export default function LoginForm({ handleLogin }: LoginFormProps) {
                 />
 
                 <div className="flex justify-start">
-                    <Button type="submit" className="px-4" variant="default" onClick={handleLogin}>
+                    <Button type="submit" className="px-4" variant="default">
                         Next
                         <ChevronRight className="size-4" />
                     </Button>
