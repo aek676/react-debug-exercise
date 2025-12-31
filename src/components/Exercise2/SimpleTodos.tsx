@@ -7,7 +7,7 @@ const initialTodosList = [
         title: 'Book the ticket for today evening',
     },
     {
-        id: 1,
+        id: 2,
         title: 'Rent the movie for tomorrow movie night',
     },
     {
@@ -40,7 +40,7 @@ export default function SimpleTodos() {
     const [todosList, setTodosList] = useState(initialTodosList);
 
     const deleteTodo = (id: number) => {
-        const updatedTodos = todosList.filter(todo => todo.id === id);
+        const updatedTodos = todosList.filter(todo => todo.id !== id);
         setTodosList(updatedTodos);
     }
 

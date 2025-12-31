@@ -7,10 +7,10 @@ class SearchBox extends Component {
     this.searchInputRef = React.createRef();
   }
 
-
   handleChange(event) {
     event.target.select();
   }
+
   render() {
     return (
       <div className="w-full search-container">
@@ -19,9 +19,16 @@ class SearchBox extends Component {
             <a
               href="./"
               title="ReactJS TMDb Movie Search"
-              onClick={() => (window.ga && window.ga('send', 'event', 'link', 'internal', 'TMDB logo'))}
+              onClick={() =>
+                window.ga &&
+                window.ga("send", "event", "link", "internal", "TMDB logo")
+              }
             >
-              <img src={TMDBLogo} className="h-10 md:h-12" alt="The Movie Database" />
+              <img
+                src={TMDBLogo}
+                className="h-10 md:h-12"
+                alt="The Movie Database"
+              />
             </a>
           </div>
           <div className="w-full md:w-2/3">

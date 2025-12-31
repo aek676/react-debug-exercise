@@ -9,7 +9,7 @@ export default function TodosItem({ todo, deleteTodo }: TodosItemProps) {
     const { id, title } = todo;
 
     const onDeleteTodo = () => {
-        deleteTodo(id + 1);
+        deleteTodo(id);
     }
 
     return (
