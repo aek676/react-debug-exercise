@@ -29,7 +29,12 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Source - https://stackoverflow.com/a/61636112
+    // Posted by Greg Wozniak, modified by community. See post 'Timeline' for change history
+    // Retrieved 2025-12-31, License - CC BY-SA 4.0
+    "types": ["@testing-library/jest-dom"]
   },
 
   "exclude": ["dist", "node_modules"]
